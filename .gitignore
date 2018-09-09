@@ -1,0 +1,7 @@
+*.iml
+.idea/
+HS/__pycache__/
+DTV/__pycache__/
+DTV/*.txt
+DTV/*.jpg
+DTV/*.zip

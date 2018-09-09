@@ -1,0 +1,12 @@
+import nmap
+scanner = nmap.PortScanner()
+print("Nmap Version: {}".format(scanner.nmap_version()))
+scanner.scan('192.168.0.1', '1-1024', '-v --version-all')
+print(scanner.scaninfo())
+print(scanner.csv())
+print(scanner.scanstats())
+print(scanner.all_hosts())
+print(scanner['192.168.0.1'].state())
+print(scanner['192.168.0.1'].all_protocols())
+print(scanner['192.168.0.1']['tcp'].keys())
+print(scanner['192.168.0.1'].has_tcp(80))
